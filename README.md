@@ -1,2 +1,1 @@
-# personal_website
-The code of my personal website
+# This is the repo where my personal website will be born
