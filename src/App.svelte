@@ -1,21 +1,16 @@
 <script lang="ts">
-    import Tailwind from './Tailwind.svelte';
+    import Tailwind from './utils/Tailwind.svelte';
 </script>
 
 <Tailwind />
 <main>
-    <h1 class="text-blue-900">Hello!</h1>
-    <p>
-        Visit the
-        <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-        to learn how to build Svelte apps.
-    </p>
+    <h1 class="text-blue-400">Hello!</h1>
 </main>
 
 <style lang="scss">
     main {
         h1 {
-            font-size: 22rem;
+            font-size: 15rem;
         }
     }
 </style>
