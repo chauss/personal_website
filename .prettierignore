@@ -1,0 +1,9 @@
+build
+.eslintignore
+.gitignore
+.prettierignore
+LICENSE
+**/*.png
+**/*.svg
+**/*.jpg
+**/*.md

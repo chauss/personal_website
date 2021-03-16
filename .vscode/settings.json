@@ -1,0 +1,13 @@
+{
+    "editor.formatOnSave": true,
+    "eslint.validate": ["javascript", "typescript", "svelte"],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

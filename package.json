@@ -11,7 +11,9 @@
         "build": "rollup -c",
         "dev": "rollup -c -w",
         "start": "sirv public",
-        "validate": "svelte-check"
+        "validate": "svelte-check",
+        "format-all": "prettier --config .prettierrc.js '**/*' --write",
+        "format-src": "prettier --config .prettierrc.js 'src/**/*.ts' '/src**/*.svelte' --write"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^2.3.0",
@@ -19,15 +21,20 @@
         "@rollup/plugin-node-resolve": "^11.0.0",
         "@rollup/plugin-typescript": "^8.0.0",
         "@tsconfig/svelte": "^1.0.0",
-        "rollup-plugin-css-only": "^3.1.0",
         "autoprefixer": "^9.8.5",
-        "sass": "^1.32.8",
+        "eslint": "^7.22.0",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-svelte3": "^3.1.2",
         "postcss": "^7.0.32",
         "postcss-load-config": "^2.1.0",
+        "prettier": "^2.2.1",
+        "prettier-plugin-svelte": "^2.2.0",
         "rollup": "^2.41.2",
+        "rollup-plugin-css-only": "^3.1.0",
         "rollup-plugin-livereload": "^2.0.0",
         "rollup-plugin-svelte": "^7.0.0",
         "rollup-plugin-terser": "^7.0.0",
+        "sass": "^1.32.8",
         "svelte": "^3.0.0",
         "svelte-check": "^1.2.5",
         "svelte-preprocess": "^4.0.0",
@@ -36,6 +43,7 @@
         "typescript": "^4.0.0"
     },
     "dependencies": {
-        "sirv-cli": "^1.0.0"
+        "sirv-cli": "^1.0.0",
+        "svelte-i18n": "^3.3.6"
     }
 }

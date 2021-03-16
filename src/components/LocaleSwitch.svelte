@@ -16,10 +16,8 @@
 
 <div class="text-white">
     {#each locales as locale, idx}
-        <span
-            class="cursor-pointer"
-            class:font-bold={locale === selectedLocale}
-            on:click={() => selectLocale(locale)}>{locale}</span
+        <span class="cursor-pointer" class:font-bold={locale === selectedLocale} on:click={() => selectLocale(locale)}
+            >{locale}</span
         >
         {#if idx < locales.length - 1}
             <span>{' | '}</span>

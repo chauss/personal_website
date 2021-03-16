@@ -8,9 +8,11 @@
 </script>
 
 <Tailwind />
-<LocaleSwitch on:locale-changed={switchLocale} />
+<div class="absolute top-0 right-0 pr-20 pt-12">
+    <LocaleSwitch on:locale-changed={switchLocale} />
+</div>
 <main class="container mx-auto">
-    <h1 class="text-blue-500 p-6 hover:text-blue-300 text-center">Hello!</h1>
+    <h1 class="text-blue-600 p-6 hover:text-blue-300 text-center">Hello!</h1>
 </main>
 
 <style lang="scss">
