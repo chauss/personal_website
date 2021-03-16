@@ -7,3 +7,4 @@ LICENSE
 **/*.svg
 **/*.jpg
 **/*.md
+package-lock.json
