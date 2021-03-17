@@ -1,7 +1,7 @@
 <script lang="ts">
     import Tailwind from './utils/Tailwind.svelte';
     import LocaleSelector from './components/LocaleSelector.svelte';
-    import { initI18n, translationIsBeingLoaded, _ } from './utils/I18n';
+    import { initI18n, _ } from './utils/I18n';
 
     initI18n();
     const onLocaleChanged = () => {
@@ -14,11 +14,7 @@
     <LocaleSelector on:locale-changed={onLocaleChanged} />
 </div>
 <main class="container mx-auto">
-    {#if translationIsBeingLoaded}
-        <h1>Loading</h1>
-    {:else}
-        <h1 class="text-blue-600 p-6 hover:text-blue-300 text-center">{$_('title', { values: { name: 'Chris' } })}</h1>
-    {/if}
+    <h1 class="text-blue-600 p-6 hover:text-blue-300 text-center">{$_('title', { values: { name: 'Chris' } })}</h1>
 </main>
 
 <style lang="scss">

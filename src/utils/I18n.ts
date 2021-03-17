@@ -1,9 +1,8 @@
 import { fallbackLocale, supportedLocales } from '../config/I10n';
-import { locale as i18nLocale, init, _, getLocaleFromNavigator, register, isLoading } from 'svelte-i18n';
-
-const pathForLocale = (locale: string) => {
-    return `/i18n/${locale}.json`;
-};
+import { locale as i18nLocale, init, _, getLocaleFromNavigator, dictionary, isLoading, addMessages } from 'svelte-i18n';
+import de from '../assets/i18n/de.json';
+import en from '../assets/i18n/en.json';
+import es from '../assets/i18n/es.json';
 
 const getValidLocale = (locale?: string): string => {
     if (locale) {
@@ -18,9 +17,10 @@ const initI18n = (initialLocale?: string): void => {
 
     init({ initialLocale: locale, fallbackLocale: fallbackLocale, warnOnMissingMessages: false });
 
-    supportedLocales.forEach((locale) => {
-        register(locale, () => import('./de.json'));
-    });
+    // For now manually added since dynamic import is not working out of the box
+    addMessages('de', de);
+    addMessages('en', en);
+    addMessages('es', es);
 };
 
 const switchLocaleTo = (newLocale: string): void => {
@@ -28,4 +28,4 @@ const switchLocaleTo = (newLocale: string): void => {
     i18nLocale.set(locale);
 };
 
-export { initI18n, _, switchLocaleTo, i18nLocale as locale, isLoading as translationIsBeingLoaded };
+export { initI18n, _, switchLocaleTo, i18nLocale as locale };
