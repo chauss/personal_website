@@ -1,3 +1,7 @@
 {
-    "title": "Hello {name}"
+    "hero": {
+        "title": "Hey, it's Chris!",
+        "subtitle": "Software Developer and more",
+        "info": "I'm Chris. Ich entwickle Software mit Leidenschaft. Ich versuche dabei ständig weiter zu lernen und achte gerne auf Clean Code. Neben der Entwicklung habe ich auch viele andere Interessen. Wenn du mehr über mich erfahren möchtest, scrolle nach unten!"
+    }
 }

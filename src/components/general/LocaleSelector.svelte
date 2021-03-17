@@ -1,7 +1,7 @@
 <script lang="ts">
     import { createEventDispatcher } from 'svelte';
-    import { supportedLocales } from '../config/I10n';
-    import { locale, switchLocaleTo } from '../utils/I18n';
+    import { supportedLocales } from '../../config/I10n';
+    import { locale, switchLocaleTo } from '../../utils/I18n';
 
     const dispatch = createEventDispatcher();
     const onLocaleSelected = (newLocale: string): void => {
