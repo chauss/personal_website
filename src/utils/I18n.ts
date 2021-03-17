@@ -17,7 +17,7 @@ const initI18n = (initialLocale?: string): void => {
 
     init({ initialLocale: locale, fallbackLocale: fallbackLocale, warnOnMissingMessages: false });
 
-    // For now manually added since dynamic import is not working out of the box
+    // For now manually and statically added since dynamic import is not working out of the box
     addMessages('de', de);
     addMessages('en', en);
     addMessages('es', es);
