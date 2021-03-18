@@ -22,6 +22,20 @@ const themes: Theme[] = [
             ...darkModeColors,
         },
     },
+    {
+        name: 'dark-green',
+        colors: {
+            primaryColor: '#65C04E',
+            ...darkModeColors,
+        },
+    },
+    {
+        name: 'dark-purple',
+        colors: {
+            primaryColor: '#A567F4',
+            ...darkModeColors,
+        },
+    },
 ];
 
 export default themes;
