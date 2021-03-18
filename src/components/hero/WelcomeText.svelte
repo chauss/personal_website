@@ -8,18 +8,19 @@
 
 <style lang="scss">
     .title {
-        color: white;
+        color: var(--primaryColor);
         font-size: 72px;
     }
     .subtitle {
         margin-top: -8px;
-        color: rgba(white, 0.86);
+        color: var(--textColorMedium);
         font-size: 24px;
     }
     .info {
         margin-top: 20px;
-        color: rgba(white, 0.6);
+        color: var(--textColorLight);
         font-size: 18px;
         width: 480px;
+        line-height: 28px;
     }
 </style>
