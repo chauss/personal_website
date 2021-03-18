@@ -10,7 +10,7 @@
     "scripts": {
         "build": "rollup -c",
         "dev": "rollup -c -w",
-        "start": "sirv public",
+        "start": "sirv public --host 0.0.0.0",
         "validate": "svelte-check",
         "format-all": "prettier --config .prettierrc.js '**/*' --write",
         "format-src": "prettier --config .prettierrc.js 'src/**/*.ts' '/src**/*.svelte' --write"
