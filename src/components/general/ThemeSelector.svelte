@@ -25,8 +25,8 @@
             border-radius: 16px;
             margin: 0 8px;
             background-color: var(--themeColor);
-            transition: opacity 0.3s ease-in-out;
-            opacity: 0.6;
+            transition: opacity 0.2s ease-in-out;
+            opacity: 0.5;
 
             &.selected,
             &:hover {
