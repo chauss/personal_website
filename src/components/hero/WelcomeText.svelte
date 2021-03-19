@@ -13,12 +13,12 @@
     }
     .subtitle {
         margin-top: -8px;
-        color: var(--textColorMedium);
+        color: var(--textColorLight);
         font-size: 24px;
     }
     .info {
         margin-top: 20px;
-        color: var(--textColorLight);
+        color: var(--textColorMedium);
         font-size: 18px;
         width: 480px;
         line-height: 28px;

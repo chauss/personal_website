@@ -2,37 +2,44 @@ import type { Theme } from '../types/theme';
 
 const darkModeColors = {
     backgroundColor: '#121212',
-    textColorStrong: '#e6e6e6',
-    textColorMedium: '#c7c7c7',
-    textColorLight: '#8c8c8c',
+    textColorStrong: '#e3e3e3',
+    textColorMedium: '#c1c1c1',
+    textColorLight: '#898989',
 };
 
 const themes: Theme[] = [
     {
         name: 'dark-blue',
         colors: {
-            primaryColor: '#3297C2',
+            primaryColor: '#2D799F',
             ...darkModeColors,
         },
     },
     {
         name: 'dark-orange',
         colors: {
-            primaryColor: '#BE7B17',
+            primaryColor: '#C76838',
             ...darkModeColors,
         },
     },
     {
         name: 'dark-green',
         colors: {
-            primaryColor: '#65C04E',
+            primaryColor: '#409F2D',
+            ...darkModeColors,
+        },
+    },
+    {
+        name: 'dark-rose',
+        colors: {
+            primaryColor: '#BF364D',
             ...darkModeColors,
         },
     },
     {
         name: 'dark-purple',
         colors: {
-            primaryColor: '#A567F4',
+            primaryColor: '#5065CE',
             ...darkModeColors,
         },
     },
