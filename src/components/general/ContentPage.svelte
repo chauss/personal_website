@@ -1,13 +1,9 @@
 <script lang="ts">
+    let height = window.innerHeight;
+    let width = window.innerWidth;
 </script>
 
-<div class="content-page">
+<svelte:window bind:innerHeight={height} bind:innerWidth={width} />
+<div style={`height: ${height - 20}px; width: ${width - 20}px;`}>
     <slot />
 </div>
-
-<style lang="scss">
-    .content-page {
-        height: 100vh;
-        width: 100vh;
-    }
-</style>
