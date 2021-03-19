@@ -19,7 +19,6 @@ const initI18n = (initialLocale?: string): void => {
     const locale = getValidLocale(initialLocale);
 
     init({ initialLocale: locale, fallbackLocale: fallbackLocale, warnOnMissingMessages: false });
-    localStorage.setItem(LOCAL_STORAGE_KEY_LOCALE, locale);
 
     // For now manually and statically added since dynamic import is not working out of the box
     addMessages('de', de);

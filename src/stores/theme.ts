@@ -23,7 +23,6 @@ const themeStore = () => {
     const initialTheme = getInitialTheme();
 
     const { subscribe, set } = writable<Theme>(initialTheme);
-    localStorage.setItem(LOCAL_STORAGE_KEY_THEME, initialTheme.name);
 
     const setNewThemeByName = (newThemeName: string) => {
         const theme = getThemeByName(newThemeName);
