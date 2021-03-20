@@ -4,6 +4,12 @@
 </script>
 
 <svelte:window bind:innerHeight={height} bind:innerWidth={width} />
-<div style={`height: ${height - 20}px; width: ${width - 20}px;`}>
+<div class="content-page" style={`height: ${height - 20}px; width: ${width - 20}px;`}>
     <slot />
 </div>
+
+<style lang="scss">
+    .content-page {
+        margin-left: var(--marginLeft);
+    }
+</style>

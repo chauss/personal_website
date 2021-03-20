@@ -5,6 +5,7 @@
     import { initI18n, _ } from './utils/I18n';
     import ThemeSelector from './components/general/ThemeSelector.svelte';
     import CssThemeProvider from './components/general/CssThemeProvider.svelte';
+    import CssLayoutProvider from './components/general/CssLayoutProvider.svelte';
 
     initI18n();
     const onLocaleChanged = () => {
@@ -14,13 +15,15 @@
 
 <Tailwind />
 <CssThemeProvider>
-    <div class="selectors">
-        <div class="theme-selector">
-            <ThemeSelector />
+    <CssLayoutProvider>
+        <div class="selectors">
+            <div class="theme-selector">
+                <ThemeSelector />
+            </div>
+            <LocaleSelector on:locale-changed={onLocaleChanged} />
         </div>
-        <LocaleSelector on:locale-changed={onLocaleChanged} />
-    </div>
-    <HeroContent />
+        <HeroContent />
+    </CssLayoutProvider>
 </CssThemeProvider>
 
 <style lang="scss">
