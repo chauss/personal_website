@@ -1,4 +1,6 @@
-export const layout = {
+import type { ResponsiveLayout } from '../types/layout';
+
+export const layout: ResponsiveLayout = {
     small: {
         marginLeft: '8px',
         titleFontSize: '40px',
