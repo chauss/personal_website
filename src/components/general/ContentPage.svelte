@@ -10,6 +10,6 @@
 
 <style lang="scss">
     .content-page {
-        margin-left: var(--marginLeft);
+        padding-left: var(--sidePaddingLeft);
     }
 </style>
