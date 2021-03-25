@@ -19,22 +19,30 @@
     });
 </script>
 
-{#each [images[imageIndextoShow]] as src (imageIndextoShow)}
+<div class="img-container">
+    {#each [images[imageIndextoShow]] as src (imageIndextoShow)}
     <img
         {src}
         alt={`hero_avatar_${imageIndextoShow}`}
         out:fade={{ duration: 1500 }}
         in:fly={{ duration: 2500, x: 200 }}
-    />
-{/each}
+        />
+    {/each}
+</div>
 
 <style lang="scss">
-    img {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        max-height: 100%;
-        max-width: 100%;
+    .img-container {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        
+        img {
+            position: absolute;
+            right: 0;
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
     }
 </style>
