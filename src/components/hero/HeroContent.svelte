@@ -31,7 +31,7 @@
     .avatar {
         position: absolute;
         top: 24px;
-        left: var(--marginLeft);
+        left: var(--sidePaddingLeft);
     }
     .welcome-text-box {
         position: absolute;
