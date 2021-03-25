@@ -21,11 +21,11 @@
 
 <div class="img-container">
     {#each [images[imageIndextoShow]] as src (imageIndextoShow)}
-    <img
-        {src}
-        alt={`hero_avatar_${imageIndextoShow}`}
-        out:fade={{ duration: 1500 }}
-        in:fly={{ duration: 2500, x: 200 }}
+        <img
+            {src}
+            alt={`hero_avatar_${imageIndextoShow}`}
+            out:fade={{ duration: 1500 }}
+            in:fly={{ duration: 2500, x: 200 }}
         />
     {/each}
 </div>
@@ -36,7 +36,7 @@
         overflow: hidden;
         height: 100%;
         width: 100%;
-        
+
         img {
             position: absolute;
             right: 0;
