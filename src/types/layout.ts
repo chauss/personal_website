@@ -1,5 +1,6 @@
 export type LayoutValues = {
     sidePaddingLeft: string;
+    sidePaddingRight: string;
     titleFontSize: string;
     subtitleFontSize: string;
     infoFontSize: string;
