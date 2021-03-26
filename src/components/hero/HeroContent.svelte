@@ -1,16 +1,13 @@
 <script lang="ts">
     import WelcomeText from './WelcomeText.svelte';
     import ContentPage from '../general/ContentPage.svelte';
-    import Avatar from '../../assets/img/avatar.svg';
+
     import FadingProfileImages from './FadingProfileImages.svelte';
 </script>
 
 <ContentPage>
     <div class="profile-images">
         <FadingProfileImages />
-    </div>
-    <div class="avatar">
-        <Avatar width={100} height={100} />
     </div>
     <div class="welcome-text-box">
         <WelcomeText />
@@ -27,11 +24,6 @@
         max-height: 60%;
         max-width: 50%;
         width: 50%;
-    }
-    .avatar {
-        position: absolute;
-        top: 24px;
-        left: var(--sidePaddingLeft);
     }
     .welcome-text-box {
         position: absolute;
