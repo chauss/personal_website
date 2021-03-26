@@ -12,16 +12,18 @@
     };
 </script>
 
-{#each supportedLocales as supportedlocale, idx}
-    <span
-        class="cursor-pointer"
-        class:font-bold={supportedlocale === $locale}
-        on:click={() => onLocaleSelected(supportedlocale)}>{supportedlocale}</span
-    >
-    {#if idx < supportedLocales.length - 1}
-        <span>{'|'}</span>
-    {/if}
-{/each}
+<div>
+    {#each supportedLocales as supportedlocale, idx}
+        <span
+            class="cursor-pointer"
+            class:font-extrabold={supportedlocale === $locale}
+            on:click={() => onLocaleSelected(supportedlocale)}>{supportedlocale}</span
+        >
+        {#if idx < supportedLocales.length - 1}
+            <span>{'|'}</span>
+        {/if}
+    {/each}
+</div>
 
 <style lang="scss">
     span {
