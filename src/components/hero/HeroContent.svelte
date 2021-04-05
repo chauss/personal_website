@@ -1,11 +1,14 @@
 <script lang="ts">
     import WelcomeText from './WelcomeText.svelte';
     import ContentPage from '../general/ContentPage.svelte';
-
+    import Selectors from '../general/Selectors.svelte';
     import FadingProfileImages from './FadingProfileImages.svelte';
 </script>
 
-<ContentPage>
+<ContentPage
+    ><div class="selectors-pos">
+        <Selectors />
+    </div>
     <div class="profile-images">
         <FadingProfileImages />
     </div>
@@ -15,6 +18,12 @@
 </ContentPage>
 
 <style lang="scss">
+    .selectors-pos {
+        position: absolute;
+        top: 48px;
+        right: var(--sidePaddingRight);
+        z-index: 100;
+    }
     .profile-images {
         position: absolute;
         top: 50%;
