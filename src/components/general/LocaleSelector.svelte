@@ -15,8 +15,8 @@
 <div>
     {#each supportedLocales as supportedlocale, idx}
         <span
-            class="cursor-pointer"
-            class:font-extrabold={supportedlocale === $locale}
+            class="language"
+            class:selected={supportedlocale === $locale}
             on:click={() => onLocaleSelected(supportedlocale)}>{supportedlocale}</span
         >
         {#if idx < supportedLocales.length - 1}
@@ -27,8 +27,23 @@
 
 <style lang="scss">
     span {
-        user-select: none;
         color: var(--textColorStrong);
         padding: 0 2px;
+    }
+
+    .language {
+        user-select: none;
+        font-weight: lighter;
+        padding: 0 0 0 4px;
+        cursor: pointer;
+
+        &.selected {
+            font-weight: bolder;
+            color: var(--primaryColor);
+        }
+
+        &:hover {
+            color: var(--primaryColor);
+        }
     }
 </style>
