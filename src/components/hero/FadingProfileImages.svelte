@@ -14,7 +14,7 @@
     onMount(() => {
         const interval = setInterval(() => {
             imageIndextoShow = (imageIndextoShow + 1) % images.length;
-        }, 8000);
+        }, 20000);
         return () => clearInterval(interval);
     });
 </script>
