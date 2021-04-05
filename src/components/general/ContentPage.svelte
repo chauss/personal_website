@@ -10,6 +10,7 @@
 
 <style lang="scss">
     .content-page {
+        position: relative;
         padding-left: var(--sidePaddingLeft);
         width: 100%;
     }

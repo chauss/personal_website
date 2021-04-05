@@ -1,5 +1,5 @@
 <script lang="ts">
-    import WelcomeText from './WelcomeText.svelte';
+    import Description from '../general/Description.svelte';
     import ContentPage from '../general/ContentPage.svelte';
     import Selectors from '../general/Selectors.svelte';
     import FadingProfileImages from './FadingProfileImages.svelte';
@@ -13,7 +13,7 @@
         <FadingProfileImages />
     </div>
     <div class="welcome-text-box">
-        <WelcomeText />
+        <Description title="hero.title" subtitle="hero.subtitle" info="hero.info" />
     </div>
 </ContentPage>
 
