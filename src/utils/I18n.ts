@@ -6,12 +6,17 @@ import es from '../assets/i18n/es.json';
 
 const LOCAL_STORAGE_KEY_LOCALE = 'locale';
 
+const getUserLocale = (): string => {
+    const navLocale = getLocaleFromNavigator();
+    return navLocale.split('-')[0];
+};
+
 const getValidLocale = (locale?: string): string => {
     if (locale) {
         return supportedLocales.includes(locale) ? locale : fallbackLocale;
     } else {
         const lastLocale = localStorage.getItem(LOCAL_STORAGE_KEY_LOCALE);
-        return lastLocale ? lastLocale : getLocaleFromNavigator();
+        return lastLocale ? lastLocale : getUserLocale();
     }
 };
 
