@@ -6,7 +6,6 @@
         'assets/images/hero_avatar_profile.png',
         'assets/images/hero_avatar_profile_3.png',
         'assets/images/hero_avatar_profile_2.png',
-        'assets/images/hero_avatar_profile_4.png',
     ];
 
     let imageIndextoShow = 0;
@@ -14,7 +13,7 @@
     onMount(() => {
         const interval = setInterval(() => {
             imageIndextoShow = (imageIndextoShow + 1) % images.length;
-        }, 20000);
+        }, 16000);
         return () => clearInterval(interval);
     });
 </script>
