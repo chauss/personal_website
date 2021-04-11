@@ -2,8 +2,8 @@ import type { ResponsiveLayout } from '../types/layout';
 
 export const layout: ResponsiveLayout = {
     small: {
-        sidePaddingLeft: '8px',
-        sidePaddingRight: '8px',
+        sidePaddingLeft: '20px',
+        sidePaddingRight: '20px',
         titleFontSize: '40px',
         subtitleFontSize: '20px',
         infoFontSize: '16px',
