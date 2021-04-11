@@ -12,7 +12,7 @@
     <div class="profile-images">
         <FadingProfileImages />
     </div>
-    <div class="welcome-text-box">
+    <div class="welcome-text-box transform md:-translate-y-1/2">
         <Description title="hero.title" subtitle="hero.subtitle" info="hero.info" />
     </div>
 </ContentPage>
@@ -37,6 +37,5 @@
     .welcome-text-box {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
     }
 </style>

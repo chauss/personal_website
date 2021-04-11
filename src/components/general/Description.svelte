@@ -30,7 +30,7 @@
         }
 
         .subtitle {
-            margin-top: -8px;
+            margin-top: -4px;
             color: var(--textColorLight);
             font-size: var(--subtitleFontSize);
         }
@@ -51,7 +51,7 @@
 
             .info {
                 margin: 0;
-                margin-top: 20px;
+                margin-top: 16px;
                 color: var(--textColorMedium);
                 font-size: var(--infoFontSize);
 
