@@ -14,11 +14,13 @@
 
 <div>
     {#each supportedLocales as supportedlocale, idx}
-        <span
+        <div
             class="language"
             class:selected={supportedlocale === $locale}
-            on:click={() => onLocaleSelected(supportedlocale)}>{supportedlocale}</span
+            on:click={() => onLocaleSelected(supportedlocale)}
         >
+            {supportedlocale}
+        </div>
         {#if idx < supportedLocales.length - 1}
             <span>{'|'}</span>
         {/if}
@@ -26,16 +28,18 @@
 </div>
 
 <style lang="scss">
-    span {
-        color: var(--textColorStrong);
-        padding: 0 2px;
+    div {
+        display: flex;
     }
-
     .language {
+        display: inline-block;
+        text-align: center;
         user-select: none;
+        border: none;
+        width: 2rem;
         font-weight: lighter;
-        padding: 0 0 0 4px;
         cursor: pointer;
+        color: var(--textColorStrong);
 
         &.selected {
             font-weight: bolder;
