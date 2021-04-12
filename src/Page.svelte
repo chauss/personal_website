@@ -1,5 +1,6 @@
 <script lang="ts">
     import HeroContent from './components/hero/HeroContent.svelte';
+    import SkillsContent from './components/skills/SkillsContent.svelte';
     import Avatar from './assets/img/avatar.svg';
 </script>
 
@@ -8,6 +9,7 @@
 </div>
 
 <HeroContent />
+<SkillsContent />
 
 <style lang="scss">
     .avatar-pos {
