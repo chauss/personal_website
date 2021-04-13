@@ -1,7 +1,7 @@
 <script lang="ts">
     import ContentPage from '../general/ContentPage.svelte';
     import Description from '../general/Description.svelte';
-    import SkillBubble, { SkillSize } from './SkillBubble.svelte';
+    import SkillSet from './SkillSet.svelte';
 </script>
 
 <ContentPage>
@@ -9,7 +9,10 @@
         <Description title="skills.title" info="skills.info" alignRight />
     </div>
     <div class="skills-pos">
-        <SkillBubble name="Svelte" size={SkillSize.small} />
+        <SkillSet
+            skillSetObject={{ setName: 'Programmiersprachen', subSkills: ['svelte', 'java', 'python', 'swift'] }}
+            degreeOffset={60}
+        />
     </div>
 </ContentPage>
 

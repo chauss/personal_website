@@ -17,7 +17,7 @@
     class:medium={size === SkillSize.medium}
     class:large={size === SkillSize.large}
 >
-    {name}
+    <p>{name}</p>
 </div>
 
 <style lang="scss">
@@ -25,6 +25,7 @@
         background-color: var(--primaryColor);
         border-radius: 50%;
         text-align: center;
+        color: var(--textColorStrong);
 
         &.small {
             height: 64px;
@@ -37,9 +38,12 @@
             line-height: 88px;
         }
         &.large {
-            height: 120px;
-            width: 120px;
+            height: 132px;
+            width: 132px;
             line-height: 120px;
+        }
+        p {
+            max-width: 100%;
         }
     }
 </style>
