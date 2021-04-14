@@ -31,6 +31,9 @@
     div {
         display: flex;
     }
+    span {
+        color: var(--textColorStrong);
+    }
     .language {
         display: inline-block;
         text-align: center;
