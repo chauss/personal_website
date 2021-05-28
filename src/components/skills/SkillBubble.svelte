@@ -22,6 +22,7 @@
 
 <style lang="scss">
     .bubble {
+        position: relative;
         background-color: var(--primaryColor);
         border-radius: 50%;
         text-align: center;
@@ -30,20 +31,21 @@
         &.small {
             height: 64px;
             width: 64px;
-            line-height: 64px;
         }
         &.medium {
             height: 88px;
             width: 88px;
-            line-height: 88px;
         }
         &.large {
             height: 132px;
             width: 132px;
-            line-height: 120px;
         }
         p {
-            max-width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            line-height: 20px;
         }
     }
 </style>

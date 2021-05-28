@@ -10,7 +10,7 @@
     </div>
     <div class="skills-pos">
         <SkillSet
-            skillSetObject={{ setName: 'Programmiersprachen', subSkills: ['svelte', 'java', 'python', 'swift'] }}
+            skillSetObject={{ setName: 'Programmier-sprachen', subSkills: ['svelte', 'java', 'python', 'swift'] }}
             degreeOffset={60}
         />
     </div>
