@@ -16,7 +16,7 @@
         "format-src": "prettier --config .prettierrc.js 'src/**/*.ts' '/src**/*.svelte' --write"
     },
     "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^2.3.0",
+        "@fullhuman/postcss-purgecss": "^4.0.3",
         "@rollup/plugin-commonjs": "^17.0.0",
         "@rollup/plugin-json": "^4.1.0",
         "@rollup/plugin-node-resolve": "^11.2.1",
