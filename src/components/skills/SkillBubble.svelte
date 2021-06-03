@@ -7,35 +7,9 @@
 </script>
 
 <script lang="ts">
-    import Line from '../general/Line.svelte';
-
     export let name: string;
     export let size: SkillSize;
-    export let connectTo: [number, number] | undefined = undefined;
     export let element: HTMLElement | undefined = undefined;
-
-    let thisPosition: [number, number];
-    $: if (element) {
-        thisPosition = [element.offsetLeft + element.offsetWidth / 2, element.offsetTop + element.offsetHeight / 2];
-    }
-
-    let relativeConnectTo: [number, number];
-    $: if (element && connectTo) {
-        // TODO Get offsetLeft and offsetTop to skill-set-container
-        let offsetLeftInSkillSetContainer = 0;
-        console.log({ offsetParent: element });
-        console.log({ offsetLeft: element.getBoundingClientRect() });
-        let parent: HTMLElement | null = element;
-        while (parent && !parent.className.includes('skill-set-container')) {
-            console.log({ offsetParent: parent.parentElement });
-            parent = parent.offsetParent as HTMLElement;
-            console.log({ offsetTop: parent.getBoundingClientRect() });
-            offsetLeftInSkillSetContainer += parent.getBoundingClientRect().left;
-        }
-        console.log({ offsetInSkillSetContainer: offsetLeftInSkillSetContainer });
-        console.log('##############################');
-        relativeConnectTo = [connectTo[0] - offsetLeftInSkillSetContainer, connectTo[1] - element.offsetTop];
-    }
 </script>
 
 <div
@@ -46,9 +20,6 @@
     bind:this={element}
 >
     <p>{name}</p>
-    {#if connectTo && thisPosition && relativeConnectTo}
-        <Line x1={thisPosition[0]} y1={thisPosition[1]} x2={relativeConnectTo[0]} y2={relativeConnectTo[1]} />
-    {/if}
 </div>
 
 <style lang="scss">
