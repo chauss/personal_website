@@ -1,19 +1,25 @@
 <script lang="ts">
     import cssVariables from '../../actions/CssVariables';
-    import type { LayoutValues } from '../../types/layout';
-    import { layout } from '../../config/layout';
+    import { LayoutSize, LayoutValues } from '../../types/layout';
+    import { layout as layoutConfig } from '../../config/layout';
+    import { currentLayoutFromWidth } from '../../helpers/layout';
+    import { layout as layoutStore } from '../../stores/layout';
 
     let windowWidth = window.innerWidth;
 
+    $: layoutStore.set(currentLayoutFromWidth(windowWidth));
+
     const getLayoutForSize = (width: number): LayoutValues => {
-        if (width <= 640) {
-            return layout.small;
-        } else if (width <= 768) {
-            return layout.medium;
-        } else if (width <= 1024) {
-            return layout.large;
+        const layoutSize = currentLayoutFromWidth(width);
+
+        if (layoutSize === LayoutSize.small) {
+            return layoutConfig.small;
+        } else if (layoutSize === LayoutSize.medium) {
+            return layoutConfig.medium;
+        } else if (layoutSize === LayoutSize.large) {
+            return layoutConfig.large;
         } else {
-            return layout.xtralarge;
+            return layoutConfig.xtralarge;
         }
     };
 </script>

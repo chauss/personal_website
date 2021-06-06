@@ -1,12 +1,14 @@
 <script lang="ts" context="module">
     export enum SkillSize {
         small,
-        medium,
         large,
     }
 </script>
 
 <script lang="ts">
+    import { layout } from '../../stores/layout';
+    import { LayoutSize } from '../../types/layout';
+
     export let name: string;
     export let size: SkillSize;
     export let element: HTMLElement | undefined = undefined;
@@ -15,8 +17,8 @@
 <div
     class="bubble"
     class:small={size === SkillSize.small}
-    class:medium={size === SkillSize.medium}
     class:large={size === SkillSize.large}
+    class:mobile={$layout === LayoutSize.small}
     bind:this={element}
 >
     <p>{name}</p>
@@ -31,16 +33,21 @@
         color: var(--textColorStrong);
 
         &.small {
-            height: 64px;
-            width: 64px;
-        }
-        &.medium {
+            opacity: 0.85;
             height: 88px;
             width: 88px;
+            &.mobile {
+                height: 76px;
+                width: 76px;
+            }
         }
         &.large {
             height: 132px;
             width: 132px;
+            &.mobile {
+                height: 120px;
+                width: 120px;
+            }
         }
         p {
             position: absolute;

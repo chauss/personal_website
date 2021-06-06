@@ -1,3 +1,10 @@
+export enum LayoutSize {
+    small,
+    medium,
+    large,
+    xtraLarge,
+}
+
 export type LayoutValues = {
     sidePaddingLeft: string;
     sidePaddingRight: string;
