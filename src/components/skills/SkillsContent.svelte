@@ -16,9 +16,9 @@
     {#if !isSmallScreen}
         <MySkills />
     {:else}
-        <SlideShow>
-            <MySkills />
-        </SlideShow>
+        <div class="slideshow-pos">
+            <SlideShow components={[MySkills]} />
+        </div>
     {/if}
 </ContentPage>
 
@@ -28,5 +28,9 @@
         justify-content: right;
         padding-top: 10%;
         padding-right: var(--sidePaddingRight);
+    }
+    .slideshow-pos {
+        margin-top: 40px;
+        margin-left: calc(-1 * var(--sidePaddingLeft));
     }
 </style>

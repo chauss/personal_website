@@ -37,6 +37,3 @@
         degreeOffset={30}
     />
 </ConditinalWrapper>
-
-<style lang="scss">
-</style>
