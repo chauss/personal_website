@@ -4,8 +4,16 @@
         "subtitle": "Desarrollador de software y más",
         "info": "Estoy actualmente desarrollando mi presencia online aquí. Siéntete libre de visitarme más tarde para ver qué nuevos cambios hay."
     },
-    "skills": {
-        "title": "El desarrollador",
-        "info": "Bei der Entwicklung konzentriere ich mich darauf die Code Qualität hoch zu halten und lerne gerne neue Dinge."
+    "mywork": {
+        "title": "Mi trabajo",
+        "info": "Me apasiona desarrollar pequeños proyectos en mi tiempo libre. Aquí puedes ver lo que he hecho hasta ahora. ¡No seas tímido y echa un vistazo!",
+        "github": {
+            "name": "GitHub",
+            "description": "Mi perfil en GitHub"
+        },
+        "recipy": {
+            "name": "Recipy",
+            "description": "Online Cookbook"
+        }
     }
 }

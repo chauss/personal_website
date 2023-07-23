@@ -4,8 +4,16 @@
         "subtitle": "Software Entwickler und mehr",
         "info": "Ich bin aktuell dabei an meiner eigenen Web-Präsenz zu arbeiten. Schau gerne später noch einmal vorbei um mehr zu sehen!"
     },
-    "skills": {
-        "title": "Der Entwickler",
-        "info": "Bei der Entwicklung konzentriere ich mich darauf die Code Qualität hoch zu halten und lerne gerne neue Dinge."
+    "mywork": {
+        "title": "Meine Arbeit",
+        "info": "Ich entwickle gerne kleinere Projekte in meiner Freizeit. Was ich so mache findest du im folgenden. Schau gerne mal rein!",
+        "github": {
+            "name": "GitHub",
+            "description": "Mein GitHub Profil"
+        },
+        "recipy": {
+            "name": "Recipy",
+            "description": "Online Kochbuch"
+        }
     }
 }

@@ -4,6 +4,7 @@ export type LayoutValues = {
     titleFontSize: string;
     subtitleFontSize: string;
     infoFontSize: string;
+    myworkGridColumns: number;
 };
 
 export type ResponsiveLayout = {
