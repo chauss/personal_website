@@ -21,6 +21,12 @@
             description="mywork.recipy.description"
             link="https://recipy-app.de"
         />
+        <Work
+            name="mywork.firebase_examples.name"
+            iconPath={'assets/images/mywork/firebase-examples.png'}
+            description="mywork.firebase_examples.description"
+            link="https://firebase-examples.chauss.app"
+        />
     </div>
 </ContentPage>
 

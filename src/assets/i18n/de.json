@@ -14,6 +14,10 @@
         "recipy": {
             "name": "Recipy",
             "description": "Online Kochbuch"
+        },
+        "firebase_examples": {
+            "name": "Firebase examples",
+            "description": "Beispiele für Firebase mit Flutter"
         }
     }
 }
