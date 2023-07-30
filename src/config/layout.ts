@@ -8,6 +8,7 @@ export const layout: ResponsiveLayout = {
         subtitleFontSize: '20px',
         infoFontSize: '16px',
         myworkGridColumns: 1,
+        mysocialmediaGridColumns: 1,
     },
     medium: {
         sidePaddingLeft: '40px',
@@ -16,6 +17,7 @@ export const layout: ResponsiveLayout = {
         subtitleFontSize: '20px',
         infoFontSize: '18px',
         myworkGridColumns: 2,
+        mysocialmediaGridColumns: 2,
     },
     large: {
         sidePaddingLeft: '60px',
@@ -24,6 +26,7 @@ export const layout: ResponsiveLayout = {
         subtitleFontSize: '24px',
         infoFontSize: '20px',
         myworkGridColumns: 2,
+        mysocialmediaGridColumns: 2,
     },
     xtralarge: {
         sidePaddingLeft: '80px',
@@ -32,5 +35,6 @@ export const layout: ResponsiveLayout = {
         subtitleFontSize: '24px',
         infoFontSize: '18px',
         myworkGridColumns: 3,
+        mysocialmediaGridColumns: 3,
     },
 };

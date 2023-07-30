@@ -19,5 +19,9 @@
             "name": "Firebase examples",
             "description": "Beispiele für Firebase mit Flutter"
         }
+    },
+    "mysocialmedia": {
+        "title": "Meine sozialen Medien",
+        "info": "Obwohl ich mich gerne sehr stark aus den sozialen Medien herausziehe habe ich hier und dort das ein oder andere Profil. Wenn es dich interessiert schau gerne mal rein."
     }
 }

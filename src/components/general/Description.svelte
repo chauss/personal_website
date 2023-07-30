@@ -58,5 +58,9 @@
                 line-height: 28px;
             }
         }
+
+        .text-right {
+            text-align: end;
+        }
     }
 </style>

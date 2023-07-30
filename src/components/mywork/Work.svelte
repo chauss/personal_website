@@ -23,6 +23,7 @@
         height: 200px;
         width: 300px;
         position: relative;
+        direction: ltr;
 
         .border {
             position: absolute;

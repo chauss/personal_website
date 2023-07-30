@@ -40,8 +40,10 @@
     .mywork-pos {
         position: absolute;
         top: 50%;
+        right: var(--sidePaddingRight);
         display: grid;
         grid-template-columns: repeat(var(--myworkGridColumns), auto);
+        direction: rtl;
         gap: 12px;
     }
 </style>

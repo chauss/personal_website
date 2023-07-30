@@ -5,6 +5,7 @@ export type LayoutValues = {
     subtitleFontSize: string;
     infoFontSize: string;
     myworkGridColumns: number;
+    mysocialmediaGridColumns: number;
 };
 
 export type ResponsiveLayout = {

@@ -1,7 +1,8 @@
 <script lang="ts">
+    import Avatar from './assets/img/avatar.svg';
     import HeroContent from './components/hero/HeroContent.svelte';
     import MyWorkContent from './components/mywork/MyWorkContent.svelte';
-    import Avatar from './assets/img/avatar.svg';
+    import MySocialMediaContent from './components/socialmedia/MySocialMediaContent.svelte';
 </script>
 
 <div class="avatar-pos">
@@ -10,6 +11,7 @@
 
 <HeroContent />
 <MyWorkContent />
+<MySocialMediaContent />
 
 <style lang="scss">
     .avatar-pos {
